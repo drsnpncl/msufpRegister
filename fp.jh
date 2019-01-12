@@ -1,0 +1,55 @@
+entity User {
+	firstName String,
+    lastName String,
+    email String,
+    password String,
+    gender String,
+    contact String,
+    city String,
+    college String,
+    department String,
+    year Integer
+}
+
+entity Event {
+	name String,
+    fee Integer,
+    numberOfMembers String,
+    typeOfParticipation String,
+    freeEvent Boolean,
+    abstractSelect Boolean,
+    test Boolean,
+    status String,
+    parentEvent String,
+    eventType String
+}
+
+entity UserGroup {
+	groupName String
+}
+
+entity Participation {
+	regDate Date,
+    paymentMode String,
+    paymentAccept Boolean,
+    abstractSelect Boolean
+}
+
+relationship OneToOne {
+	Participation{userGroup} to UserGroup,
+    Participation{event} to Event
+}
+
+
+relationship ManyToMany {
+	UserGroup{users} to User
+}
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+
+// Set an angular suffix
+angularSuffix * with fp
