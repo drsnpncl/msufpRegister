@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "msufpRegister",
+    "packageName": "io.github.msufp.register",
+    "packageFolder": "io/github/msufp/register",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "react",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.7.2",
+    "jwtSecretKey": "ZDljNDVmNDRjM2M4MWQ5ZmQ1ZTBmMmM0NmZhYTE5YmY5NDhlN2FhZGVhOWU2NWQwYWRhZjRmYjk5ODhmZTI5NGY2OGQxYTUzMzI2NDNkNmRiNGNhYTc4MTU4ZjQ0MzZkYTI0MTczYzE3ZTIxOGFhNjAxYjU1ZGRmZTg3YTMzOTA=",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "drsnpncl",
+  "repository-name": "msufpRegister"
+}
