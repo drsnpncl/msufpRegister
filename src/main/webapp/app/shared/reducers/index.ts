@@ -11,6 +11,18 @@ import activate, { ActivateState } from 'app/modules/account/activate/activate.r
 import password, { PasswordState } from 'app/modules/account/password/password.reducer';
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
+// prettier-ignore
+import event, {
+  EventFpState
+} from 'app/entities/event-fp/event-fp.reducer';
+// prettier-ignore
+import userGroup, {
+  UserGroupFpState
+} from 'app/entities/user-group-fp/user-group-fp.reducer';
+// prettier-ignore
+import participation, {
+  ParticipationFpState
+} from 'app/entities/participation-fp/participation-fp.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -23,6 +35,9 @@ export interface IRootState {
   readonly passwordReset: PasswordResetState;
   readonly password: PasswordState;
   readonly settings: SettingsState;
+  readonly event: EventFpState;
+  readonly userGroup: UserGroupFpState;
+  readonly participation: ParticipationFpState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -37,6 +52,9 @@ const rootReducer = combineReducers<IRootState>({
   passwordReset,
   password,
   settings,
+  event,
+  userGroup,
+  participation,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });

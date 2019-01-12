@@ -1,0 +1,56 @@
+{
+    "name": "Event",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fee",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "numberOfMembers",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "typeOfParticipation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "freeEvent",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "abstractSelect",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "test",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "parentEvent",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "eventType",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190112152714",
+    "entityTableName": "event",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "fp"
+}

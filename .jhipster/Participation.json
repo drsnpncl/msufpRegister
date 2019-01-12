@@ -1,0 +1,49 @@
+{
+    "name": "Participation",
+    "fields": [
+        {
+            "fieldName": "regDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "paymentMode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "paymentAccept",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "abstractSelect",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "userGroup",
+            "otherEntityName": "userGroup",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "participation"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "event",
+            "otherEntityName": "event",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "participation"
+        }
+    ],
+    "changelogDate": "20190112152716",
+    "entityTableName": "participation",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "fp"
+}
